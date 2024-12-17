@@ -1,0 +1,3 @@
+X:/c_dev/kompressor/cmake-build-debug/CMakeFiles/kompressor.dir
+X:/c_dev/kompressor/cmake-build-debug/CMakeFiles/edit_cache.dir
+X:/c_dev/kompressor/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/CMakeFiles/kompressor.dir/embed.manifest"
