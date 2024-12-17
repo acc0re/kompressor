@@ -1,3 +1,16 @@
 X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/CMakeFiles/kompressor.dir
 X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
 X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/CMakeFiles/list_install_components.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/CMakeFiles/install.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/CMakeFiles/install/local.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/snappy/CMakeFiles/snappy.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/snappy/CMakeFiles/snappy_test_support.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/snappy/CMakeFiles/snappy_unittest.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/snappy/CMakeFiles/snappy_test_tool.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/snappy/CMakeFiles/snappy_benchmark.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/snappy/CMakeFiles/edit_cache.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/snappy/CMakeFiles/rebuild_cache.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/snappy/CMakeFiles/list_install_components.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/snappy/CMakeFiles/install.dir
+X:/c_dev/kompressor/kompressor/cmake-build-debug-visual-studio/snappy/CMakeFiles/install/local.dir
