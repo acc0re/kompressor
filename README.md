@@ -64,7 +64,7 @@ Snappy achieves these speeds by optimizing for modern CPUs, prioritizing perform
 ### 🛠️ **Build Systems**
 - Written in **C** for efficiency and portability.  
 - Uses **CMake** for building.  
-- Currently tested only on **Windows** and **macOS (ARM)**
+- Currently tested only on **Windows** and **macOS (ARM)**.
 
 ---
 
