@@ -51,9 +51,17 @@ build cmake_object_order_depends_target_kompressor: phony || cmake_object_order_
 
 build CMakeFiles\kompressor.dir\main.c.obj: C_COMPILER__kompressor_unscanned_Debug X$:\c_dev\kompressor\kompressor\main.c || cmake_object_order_depends_target_kompressor
   FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 /MDd
-  INCLUDES = -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
   OBJECT_DIR = CMakeFiles\kompressor.dir
   OBJECT_FILE_DIR = CMakeFiles\kompressor.dir
+  TARGET_COMPILE_PDB = CMakeFiles\kompressor.dir\
+  TARGET_PDB = kompressor.pdb
+
+build CMakeFiles\kompressor.dir\src\kompressor.c.obj: C_COMPILER__kompressor_unscanned_Debug X$:\c_dev\kompressor\kompressor\src\kompressor.c || cmake_object_order_depends_target_kompressor
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 /MDd
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
+  OBJECT_DIR = CMakeFiles\kompressor.dir
+  OBJECT_FILE_DIR = CMakeFiles\kompressor.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\kompressor.dir\
   TARGET_PDB = kompressor.pdb
 
@@ -65,7 +73,7 @@ build CMakeFiles\kompressor.dir\main.c.obj: C_COMPILER__kompressor_unscanned_Deb
 #############################################
 # Link the executable kompressor.exe
 
-build kompressor.exe: C_EXECUTABLE_LINKER__kompressor_Debug CMakeFiles\kompressor.dir\main.c.obj | snappy\snappy.lib || snappy\snappy.lib
+build kompressor.exe: C_EXECUTABLE_LINKER__kompressor_Debug CMakeFiles\kompressor.dir\main.c.obj CMakeFiles\kompressor.dir\src\kompressor.c.obj | snappy\snappy.lib || snappy\snappy.lib
   FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 /MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = snappy\snappy.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -147,7 +155,7 @@ build cmake_object_order_depends_target_snappy: phony || .
 build snappy\CMakeFiles\snappy.dir\snappy-c.cc.obj: CXX_COMPILER__snappy_unscanned_Debug X$:\c_dev\kompressor\kompressor\snappy\snappy-c.cc || cmake_object_order_depends_target_snappy
   DEFINES = -DHAVE_CONFIG_H -D_HAS_EXCEPTIONS=0
   FLAGS = /DWIN32 /D_WINDOWS /W4   /EHs-c- /GR- /MDd /Zi /Ob0 /Od /RTC1 /MDd
-  INCLUDES = -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
   OBJECT_DIR = snappy\CMakeFiles\snappy.dir
   OBJECT_FILE_DIR = snappy\CMakeFiles\snappy.dir
   TARGET_COMPILE_PDB = snappy\CMakeFiles\snappy.dir\snappy.pdb
@@ -156,7 +164,7 @@ build snappy\CMakeFiles\snappy.dir\snappy-c.cc.obj: CXX_COMPILER__snappy_unscann
 build snappy\CMakeFiles\snappy.dir\snappy-sinksource.cc.obj: CXX_COMPILER__snappy_unscanned_Debug X$:\c_dev\kompressor\kompressor\snappy\snappy-sinksource.cc || cmake_object_order_depends_target_snappy
   DEFINES = -DHAVE_CONFIG_H -D_HAS_EXCEPTIONS=0
   FLAGS = /DWIN32 /D_WINDOWS /W4   /EHs-c- /GR- /MDd /Zi /Ob0 /Od /RTC1 /MDd
-  INCLUDES = -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
   OBJECT_DIR = snappy\CMakeFiles\snappy.dir
   OBJECT_FILE_DIR = snappy\CMakeFiles\snappy.dir
   TARGET_COMPILE_PDB = snappy\CMakeFiles\snappy.dir\snappy.pdb
@@ -165,7 +173,7 @@ build snappy\CMakeFiles\snappy.dir\snappy-sinksource.cc.obj: CXX_COMPILER__snapp
 build snappy\CMakeFiles\snappy.dir\snappy-stubs-internal.cc.obj: CXX_COMPILER__snappy_unscanned_Debug X$:\c_dev\kompressor\kompressor\snappy\snappy-stubs-internal.cc || cmake_object_order_depends_target_snappy
   DEFINES = -DHAVE_CONFIG_H -D_HAS_EXCEPTIONS=0
   FLAGS = /DWIN32 /D_WINDOWS /W4   /EHs-c- /GR- /MDd /Zi /Ob0 /Od /RTC1 /MDd
-  INCLUDES = -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
   OBJECT_DIR = snappy\CMakeFiles\snappy.dir
   OBJECT_FILE_DIR = snappy\CMakeFiles\snappy.dir
   TARGET_COMPILE_PDB = snappy\CMakeFiles\snappy.dir\snappy.pdb
@@ -174,7 +182,7 @@ build snappy\CMakeFiles\snappy.dir\snappy-stubs-internal.cc.obj: CXX_COMPILER__s
 build snappy\CMakeFiles\snappy.dir\snappy.cc.obj: CXX_COMPILER__snappy_unscanned_Debug X$:\c_dev\kompressor\kompressor\snappy\snappy.cc || cmake_object_order_depends_target_snappy
   DEFINES = -DHAVE_CONFIG_H -D_HAS_EXCEPTIONS=0
   FLAGS = /DWIN32 /D_WINDOWS /W4   /EHs-c- /GR- /MDd /Zi /Ob0 /Od /RTC1 /MDd
-  INCLUDES = -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy -IX:\c_dev\kompressor\kompressor\snappy
   OBJECT_DIR = snappy\CMakeFiles\snappy.dir
   OBJECT_FILE_DIR = snappy\CMakeFiles\snappy.dir
   TARGET_COMPILE_PDB = snappy\CMakeFiles\snappy.dir\snappy.pdb
@@ -210,7 +218,7 @@ build cmake_object_order_depends_target_snappy_test_support: phony || cmake_obje
 build snappy\CMakeFiles\snappy_test_support.dir\snappy-test.cc.obj: CXX_COMPILER__snappy_test_support_unscanned_Debug X$:\c_dev\kompressor\kompressor\snappy\snappy-test.cc || cmake_object_order_depends_target_snappy_test_support
   DEFINES = -DHAVE_CONFIG_H -D_HAS_EXCEPTIONS=0
   FLAGS = /DWIN32 /D_WINDOWS /W4   /EHs-c- /GR- /MDd /Zi /Ob0 /Od /RTC1 /MDd
-  INCLUDES = -IX:\c_dev\kompressor\kompressor\snappy -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\snappy -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy
   OBJECT_DIR = snappy\CMakeFiles\snappy_test_support.dir
   OBJECT_FILE_DIR = snappy\CMakeFiles\snappy_test_support.dir
   TARGET_COMPILE_PDB = snappy\CMakeFiles\snappy_test_support.dir\snappy_test_support.pdb
@@ -219,7 +227,7 @@ build snappy\CMakeFiles\snappy_test_support.dir\snappy-test.cc.obj: CXX_COMPILER
 build snappy\CMakeFiles\snappy_test_support.dir\snappy_test_data.cc.obj: CXX_COMPILER__snappy_test_support_unscanned_Debug X$:\c_dev\kompressor\kompressor\snappy\snappy_test_data.cc || cmake_object_order_depends_target_snappy_test_support
   DEFINES = -DHAVE_CONFIG_H -D_HAS_EXCEPTIONS=0
   FLAGS = /DWIN32 /D_WINDOWS /W4   /EHs-c- /GR- /MDd /Zi /Ob0 /Od /RTC1 /MDd
-  INCLUDES = -IX:\c_dev\kompressor\kompressor\snappy -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\snappy -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy
   OBJECT_DIR = snappy\CMakeFiles\snappy_test_support.dir
   OBJECT_FILE_DIR = snappy\CMakeFiles\snappy_test_support.dir
   TARGET_COMPILE_PDB = snappy\CMakeFiles\snappy_test_support.dir\snappy_test_support.pdb
@@ -255,7 +263,7 @@ build cmake_object_order_depends_target_snappy_unittest: phony || cmake_object_o
 build snappy\CMakeFiles\snappy_unittest.dir\snappy_unittest.cc.obj: CXX_COMPILER__snappy_unittest_unscanned_Debug X$:\c_dev\kompressor\kompressor\snappy\snappy_unittest.cc || cmake_object_order_depends_target_snappy_unittest
   DEFINES = -DHAVE_CONFIG_H -D_HAS_EXCEPTIONS=0
   FLAGS = /DWIN32 /D_WINDOWS /W4   /EHs-c- /GR- /MDd /Zi /Ob0 /Od /RTC1 /MDd
-  INCLUDES = -IX:\c_dev\kompressor\kompressor\snappy -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\snappy -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy
   OBJECT_DIR = snappy\CMakeFiles\snappy_unittest.dir
   OBJECT_FILE_DIR = snappy\CMakeFiles\snappy_unittest.dir
   TARGET_COMPILE_PDB = snappy\CMakeFiles\snappy_unittest.dir\
@@ -293,7 +301,7 @@ build cmake_object_order_depends_target_snappy_test_tool: phony || cmake_object_
 build snappy\CMakeFiles\snappy_test_tool.dir\snappy_test_tool.cc.obj: CXX_COMPILER__snappy_test_tool_unscanned_Debug X$:\c_dev\kompressor\kompressor\snappy\snappy_test_tool.cc || cmake_object_order_depends_target_snappy_test_tool
   DEFINES = -DHAVE_CONFIG_H -D_HAS_EXCEPTIONS=0
   FLAGS = /DWIN32 /D_WINDOWS /W4   /EHs-c- /GR- /MDd /Zi /Ob0 /Od /RTC1 /MDd
-  INCLUDES = -IX:\c_dev\kompressor\kompressor\snappy -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\snappy -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy
   OBJECT_DIR = snappy\CMakeFiles\snappy_test_tool.dir
   OBJECT_FILE_DIR = snappy\CMakeFiles\snappy_test_tool.dir
   TARGET_COMPILE_PDB = snappy\CMakeFiles\snappy_test_tool.dir\
@@ -331,7 +339,7 @@ build cmake_object_order_depends_target_snappy_benchmark: phony || cmake_object_
 build snappy\CMakeFiles\snappy_benchmark.dir\snappy_benchmark.cc.obj: CXX_COMPILER__snappy_benchmark_unscanned_Debug X$:\c_dev\kompressor\kompressor\snappy\snappy_benchmark.cc || cmake_object_order_depends_target_snappy_benchmark
   DEFINES = -DHAVE_CONFIG_H -D_HAS_EXCEPTIONS=0
   FLAGS = /DWIN32 /D_WINDOWS /W4   /EHs-c- /GR- /MDd /Zi /Ob0 /Od /RTC1 /MDd
-  INCLUDES = -IX:\c_dev\kompressor\kompressor\snappy -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy
+  INCLUDES = -IX:\c_dev\kompressor\kompressor\include -IX:\c_dev\kompressor\kompressor\snappy -IX:\c_dev\kompressor\kompressor\cmake-build-debug-visual-studio\snappy
   OBJECT_DIR = snappy\CMakeFiles\snappy_benchmark.dir
   OBJECT_FILE_DIR = snappy\CMakeFiles\snappy_benchmark.dir
   TARGET_COMPILE_PDB = snappy\CMakeFiles\snappy_benchmark.dir\
