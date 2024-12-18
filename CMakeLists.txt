@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
-project(kompressor C)
+project(kompressor C CXX)
 
 set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD 11)
 
 if(MSVC)
     set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} /MDd")
