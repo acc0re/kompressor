@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 project(kompressor C CXX)
 
 set(CMAKE_C_STANDARD 99)
