@@ -46,8 +46,8 @@ void k_compress_file(const char* input_file, const char* output_file)
     }
 
     // Print size
-    printf("Eingabedateigröße: %zu Bytes\n", input_length);
-    printf("Komprimierte Dateigröße: %zu Bytes\n", compressed_length);
+    printf("Input file size: %zu Bytes\n", input_length);
+    printf("Compressed file size: %to bytes\n", compressed_length);
 
 
     // Write the compressed data to the output file
