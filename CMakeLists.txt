@@ -23,10 +23,12 @@ endif()
 
 include_directories(include)
 
-add_subdirectory(snappy)
+add_subdirectory(lib/snappy)
 
 add_executable(kompressor main.c
         include/kompressor.h
-        src/kompressor.c)
+        src/kompressor.c
+        include/crc32c.h
+        src/crc32c.c)
 
 target_link_libraries(kompressor PRIVATE snappy)
