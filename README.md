@@ -1,79 +1,59 @@
-## 📦 **kompressor**
+# kompressor
 
-**kompressor** is a simple and efficient command-line tool for file compression and decompression, written in **C** and utilizing the [Snappy library](https://github.com/google/snappy) by Google. It delivers high speeds while maintaining ease of use.
+**kompressor** is a minimal command-line tool for file compression and decompression.  
+It is written in **C** and uses Google’s **Snappy** library, which prioritizes speed and low CPU overhead over maximum compression ratios.
 
----
-
-### 🚀 **Features**
-- **Written in C**: Lightweight and efficient for high performance.  
-- **Fast Compression**: Up to **250 MB/s**.  
-- **Fast Decompression**: Up to **500 MB/s**.  
-- **Easy to Use**: Specify input and output files directly from the command line.  
-- **File-Based**: Works with any file type.  
+This project is intentionally simple and designed for high-throughput data workflows rather than everyday file archiving.
 
 ---
 
-### ⚙️ **Dependencies**
-This project uses **Snappy**, a fast and lightweight compression/decompression library.
+## Purpose
+
+`kompressor` is most useful when working with **large data volumes**.
+
+Snappy’s strengths become apparent at scale, where predictable performance and fast processing matter more than saving a few extra percent of disk space. In practice, this means the tool is best suited for:
+
+- Terabyte-scale datasets  
+- Large log archives  
+- Backup and restore pipelines  
+- Streaming and batch processing systems  
+
+For small files or general-purpose compression, formats such as ZIP, Zstandard, or 7z are usually more appropriate.
 
 ---
 
-### 🔧 **Installation**
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/acc0re/kompressor.git
-   cd kompressor
-   ```
+## Features
 
-2. Build the project using **CMake**:
-   ```bash
-   mkdir build
-   cd build
-   cmake ..
-   cmake --build .
-   ```
-
-3. Run the program:
-   ```bash
-   kompressor <input_file> <output_file>
-   ```
+- Implemented in C for performance and portability  
+- Very fast compression and decompression  
+- Simple, no-frills command-line interface  
+- Works with any file type  
 
 ---
 
-### 📘 **Usage**
-To **compress** a file:
+## Performance
+
+Approximate throughput on modern hardware:
+
+- Compression: up to ~250 MB/s  
+- Decompression: up to ~500 MB/s  
+
+These numbers reflect Snappy’s design goal: high and consistent throughput rather than optimal compression ratios.
+
+---
+
+## Dependencies
+
+- [Snappy](https://github.com/google/snappy)
+
+---
+
+## Build and Installation
+
 ```bash
-kompressor input.txt output.snappy
-```
-
-To **decompress** a file:
-```bash
-kompressor output.snappy restored.txt
-```
-
----
-
-### 📊 **Performance**
-- **Compression Speed**: Up to **250 MB/s**.  
-- **Decompression Speed**: Up to **500 MB/s**.  
-
-Snappy achieves these speeds by optimizing for modern CPUs, prioritizing performance over maximum compression ratios.
-
----
-
-### 🛠️ **Build Systems**
-- Written in **C** for efficiency and portability.  
-- Uses **CMake** for building.  
-- Currently tested only on **Windows** and **macOS (ARM)**.
-
----
-
-### 🌐 **References**
-- Snappy Library: [https://github.com/google/snappy](https://github.com/google/snappy)
-
----
-
-### 📄 **License**
-This project is licensed under the **MIT License**.
-
----
+git clone https://github.com/acc0re/kompressor.git
+cd kompressor
+mkdir build
+cd build
+cmake ..
+cmake --build .
